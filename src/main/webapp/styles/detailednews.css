@@ -1,0 +1,73 @@
+.container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    width: 65%; /* Ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding:20px;
+}
+.image img {
+    width: 50%; /* Ширина изображения 50% от ширины контейнера */
+    display: block; /* Устанавливает блочное отображение изображения */
+    margin: 0 auto; /* Центрирование изображения */
+    padding:10px;
+
+}
+.post {
+    width: 70%; /* Устанавливаем ширину основного контента */
+}
+.sidebar {
+    width: 25%; /* Устанавливаем ширину сайдбара */
+    padding: 20px; /* Устанавливаем отступы */
+    background-color: #f9f9f9; /* Цвет фона */
+}
+
+.image{
+    border-bottom: 1px solid black;
+    border-top:1px solid black;
+}
+.text-part {
+    text-align: left; /* Центрирование текста */
+}
+p {
+    white-space: pre-wrap; 
+}
+
+.tags {
+    display: flex; /* Используем flexbox для выстраивания элементов в линию */
+    flex-wrap: wrap; /* Позволяет переносить элементы на новую строку, если они не помещаются в одну */
+    justify-content: flex-start; /* Выравнивание тегов по левому краю контейнера */
+    margin: 5px 0; /* Отступ между строками тегов */
+}
+.sideImg img{
+    width:30%;
+}
+
+.delete{
+    background-color: black; /* Черный цвет фона кнопки */
+    color: white; /* Белый цвет текста кнопки */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границы у кнопки */
+    cursor: pointer; /* Курсор в виде руки при наведении на кнопку */
+    font-size: 14px; /* Размер шрифта */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+    display: inline-block; /* Размещение кнопок в линию */
+    margin: 5px; /* Отступ между кнопками */
+}
+
+.tags button {
+    background-color: black; /* Черный цвет фона кнопки */
+    color: white; /* Белый цвет текста кнопки */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границы у кнопки */
+    cursor: pointer; /* Курсор в виде руки при наведении на кнопку */
+    font-size: 14px; /* Размер шрифта */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+    display: inline-block; /* Размещение кнопок в линию */
+    margin: 5px; /* Отступ между кнопками */
+}
+
+/* Стили для кнопок при наведении */
+.tags button:hover {
+    background-color: #333; /* Темно-серый цвет фона при наведении */
+}

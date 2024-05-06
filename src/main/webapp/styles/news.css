@@ -1,0 +1,195 @@
+
+.card {
+    width:100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;  /* Элементы внутри card будут выстраиваться в одну линию */
+    align-items: center;  /* Элементы внутри card будут выровнены по вертикали */
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+}
+
+.card__top {
+    flex: 0 0 220px;  /* Жесткая ширина для .card__top */
+}
+.tags {
+    display: flex; /* Устанавливаем контейнер в режим flex для выстраивания элементов в ряд */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку, если для них не хватает места */
+    gap: 5px; /* Размещение отступа между кнопками */
+    margin-top: 10px; /* Добавление отступа сверху */
+    justify-content: flex-end;
+}
+
+
+
+.card__bottom {
+    flex: 1;  /* Используйте flex: 1, чтобы элемент .card__bottom занимал оставшееся пространство */
+    padding-left: 20px;  /* Добавьте отступ слева для отделения описания от картинки */
+    display: flex;  /* Установите display: flex для .card__bottom */
+    flex-direction: column;  /* Элементы внутри .card__bottom будут выстраиваться по вертикали */
+    justify-content: center;  /* Выровняйте элементы внутри .card__bottom по вертикали по центру */
+    text-align: right;  /* Выровняйте текст влево */
+}
+
+
+.card img {
+    width: 100%;  /* Установите изображение на всю ширину */
+}
+.tags button {
+    background-color: black;  /* Черный цвет фона кнопки */
+    color: white;  /* Белый цвет текста кнопки */
+    padding: 10px 20px;  /* Внутренние отступы сверху/снизу и слева/справа */
+    border: none;  /* Без границы */
+    cursor: pointer;  /* Курсор в виде руки при наведении на кнопку */
+    display: inline-block;  /* Размещение кнопок в линию */
+    margin: 5px;  /* Отступ между кнопками */
+    font-size: 14px;  /* Размер шрифта */
+    text-align: center;  /* Центрирование текста внутри кнопки */
+    transition: background-color 0.3s ease;  /* Плавный переход для цвета фона */
+}
+
+.tags button:hover {
+    background-color: #333;  /* Темно-серый цвет фона при наведении */
+}
+
+
+.card__price {
+    margin-top: 10px;
+}
+.card__title span{
+    font-size: 24px; /* Устанавливает желаемый размер шрифта */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.container {
+	width:100%;
+	max-width: 926px;
+	margin: 0 auto;
+}
+.readMore button{
+    border: 2px solid black;
+}
+    .readMore {
+    background-color: #0000;  /* Устанавливаем цвет фона кнопки */
+    color: black;  /* Цвет текста кнопки */
+    padding: 5px 10px;  /* Внутренние отступы сверху/снизу и слева/справа */ /* Обводка кнопки: 2px шириной, черного цвета */
+    cursor: pointer;  /* Курсор в виде руки при наведении на кнопку */
+    display: inline-block;  /* Размещение кнопки в линии */
+    font-size: 14px;  /* Размер шрифта текста */
+    text-align: center;  /* Центрирование текста внутри кнопки */
+    transition: background-color 0.3s ease;  /* Плавный переход цвета фона */
+     float: right;
+        font-weight: bold;
+        margin-top:10px;
+}
+
+
+.container__cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    /* Настройка сетки с одной колонкой */
+    grid-template-columns: 1fr;
+    /* Добавление вертикального пространства между карточками */
+    gap: 20px;
+}
+
+@media(max-width: 768px) {
+	    .tags {
+        margin-top: 0px;
+        text-align: left;  /* Выровняйте теги слева */
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 90%;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;  /* Переключение flex-direction на column */
+        align-items: center;  /* Центрирование элементов внутри card */
+        border-bottom: 1px solid black;
+    }
+
+    .card__top {
+        flex: 0 0 220px;  /* Жесткая ширина для .card__top */
+        margin: 0 auto;  /* Центрирование элемента по горизонтали */
+        text-align: center;  /* Центрирование содержимого */
+    }
+
+    .card__bottom {
+        flex: 1;  /* Элемент занимает оставшееся пространство */
+        padding-left: 20px;  /* Отступ слева */
+        display: flex;  /* Flex для .card__bottom */
+        flex-direction: column;  /* Элементы внутри будут вертикально выстроены */
+        justify-content: center;  /* Центрирование содержимого */
+        text-align: center;  /* Центрирование текста */
+    }
+
+    .card img {
+        width: 75%;  /* Установите ширину изображения */
+        display: block;  /* Используйте display: block для полной ширины */
+        margin: 0 auto;  /* Центрирование изображения по горизонтали */
+    }
+
+
+
+
+
+    .card__title {
+        font-weight: bold;
+        font-size: 14.4px;
+        margin-bottom: 10px;
+    }
+
+    .card__price {
+        margin-top: 10px;
+    }
+
+    .card a {
+        text-decoration: none;
+    }
+    .readMore button{
+        border: 2px solid black;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+
+    .readMore {
+        margin: 0 auto;  // Центрируем кнопку по горизонтали
+    border: 2px solid black; // Добавляем черную обводку
+    background-color: white; // Цвет фона кнопки белый
+    color: black; // Цвет текста кнопки черный
+    padding: 10px 20px; // Внутренние отступы сверху/снизу и слева/справа
+    display: inline-block; // Размещение кнопки в линии
+    font-size: 14px; // Размер шрифта текста
+    text-align: center; // Центрирование текста внутри кнопки
+    cursor: pointer; // Курсор в виде руки при наведении на кнопку
+    transition: background-color 0.3s ease; // Плавный переход цвета фона
+    }
+
+
+    .container {
+        width: 100%;
+        max-width: 926px;
+        margin: 0 auto;
+    }
+
+    .container__cards {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        grid-template-columns: 1fr;  /* Настройка сетки с одной колонкой */
+        gap: 20px;  /* Промежуток между элементами */
+    }
+}

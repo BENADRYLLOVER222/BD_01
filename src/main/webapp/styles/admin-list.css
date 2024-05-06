@@ -1,0 +1,128 @@
+  .container {
+            display: flex;
+            width:940px;
+            flex-direction: row;
+            justify-content: space-between;
+
+            margin: 0 auto;
+        }
+        
+        /* Стили для блоков */
+    .admin-panel,
+   .blacklist {
+    display: flex; /* Используем флекс-контейнер */
+    flex-direction: column; /* Располагаем элементы в столбик */
+    align-items: center; /* Выравниваем элементы по горизонтали по центру */
+    justify-content: center; /* Выравниваем элементы по вертикали по центру */
+    padding: 20px; /* Отступы внутри контейнера */
+    width: 50%; /* Ширина контейнера */
+}
+
+
+#commit{
+    background-color: black; /* Цвет фона кнопки черный */
+    color: white; /* Цвет текста белый для контраста с фоном *//* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 0; /* Прямоугольная форма (убрать закругление) */
+    cursor: pointer; /* Поменять курсор на указатель при наведении */
+    font-size: 14px; /* Размер шрифта */
+    padding: 10px 20px;
+}
+.line >*{
+    padding:5px;
+}
+
+.commit-div{
+    justify-content: center;
+    display:flex;
+}
+
+.line{  
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* Стили для заголовков */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        h4 {
+            margin-top: 10px;
+
+        }
+
+        /* Стили для контейнера с классом .privileges */
+
+
+/* Стили для элемента выбора (select) */
+select {
+    background-color: white; /* Белый цвет фона */
+    color: black; /* Черный цвет текста */
+    border: 1px solid black; /* Граница черного цвета */
+    border-radius: 0;/* Прямоугольная форма без закруглений */
+    padding: 5px 10px; /* Отступы внутри элемента */
+}
+
+/* Стили для выпадающих опций */
+
+.listed {
+    display: flex; /* Используем флекс-контейнер */
+    justify-content: center; /* Выравнивание по горизонтали в центр */
+    align-items: center; /* Выравнивание по вертикали в центр */ /* Отступы внутри контейнера *//* Граница черного цвета */
+    justify-content: center;
+}
+
+.listed > * {
+}
+
+
+
+.addtoblack {
+    display: flex; /* Устанавливаем флекс-контейнер */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    justify-content: flex-start; /* Выравниваем элементы по горизонтали к началу */
+ /* Разрыв между элементами, измените значение по желанию */
+}
+
+
+
+#muteuser{
+    border-radius: 0px;
+
+}
+
+.muted {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются в столбик */
+    align-items: center; /* Выравнивание элементов по горизонтали по центру */
+    justify-content: center; /* Выравнивание элементов по вертикали по центру */
+    gap: 10px; /* Разрыв между элементами, измените значение по желанию */
+    padding: 5px; /* Отступы внутри контейнера */
+}
+
+#unban {
+    background-color: black; /* Цвет фона кнопки черный */
+    color: white; /* Цвет текста белый для контраста с фоном */
+    padding: 5px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 0; /* Прямоугольная форма (убрать закругление) */
+    cursor: pointer; /* Поменять курсор на указатель при наведении */
+    font-size: 14px; /* Размер шрифта */
+    margin-left: 20px;
+}
+
+#mute{
+    background-color: black; /* Цвет фона кнопки черный */
+    color: white; /* Цвет текста белый для контраста с фоном */
+    padding: 2px 10px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 0; /* Прямоугольная форма (убрать закругление) */
+    cursor: pointer; /* Поменять курсор на указатель при наведении */
+    font-size: 14px;
+    margin-left: 10px /* Размер шрифта */
+
+}
